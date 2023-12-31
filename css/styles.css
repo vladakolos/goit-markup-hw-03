@@ -4,8 +4,35 @@ body {
   color: #434455;
   line-height: 1.5;
 }
-ul {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1158рх;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
+
+ul,
+ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a {

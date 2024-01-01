@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
@@ -28,8 +33,7 @@ img {
   margin-right: 0 auto;
 }
 
-ul,
-ol {
+ul {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
@@ -37,6 +41,26 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 156px 24px 156px;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -47,9 +71,22 @@ a {
   line-height: 1.17;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
+  display: flex;
 }
 .logo-special {
   color: #2e2f42;
+}
+
+.nav-header {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-grow: 1;
 }
 
 .nav-list-item {
@@ -59,7 +96,16 @@ a {
 }
 .contacts {
   font-style: normal;
+  display: flex;
 }
+
+.contacts-item-list {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
 .contacts-item {
   color: #434455;
   letter-spacing: 0.02em;
@@ -79,6 +125,13 @@ a {
 .hero {
   background-color: #2e2f42;
 }
+.hero-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hero-title {
   color: #fff;
   font-size: 56px;
@@ -86,6 +139,9 @@ a {
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
+  width: 496px;
+  height: 120px;
+  margin-bottom: 48px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -94,6 +150,14 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  min-height: 56px;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
 }
 .hero-button:hover {
   background-color: #404bbf;
@@ -104,6 +168,22 @@ a {
 .features-list {
   color: #434455;
   letter-spacing: 0.02em;
+  display: flex;
+  align-content: center;
+  padding-left: 156px;
+  padding-right: 156px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list-item {
+  width: calc((100% - 72px) / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  margin: 0 auto;
 }
 .features-list-title {
   color: #2e2f42;
@@ -112,13 +192,36 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
+.our-team-container {
+}
 .our-team {
   background-color: #f4f4fd;
   color: #434455;
   letter-spacing: 0.02em;
 }
+
+.our-team-list {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  padding-left: 156px;
+  padding-right: 156px;
+}
 .our-team-list-item {
+  display: flex;
+  flex-direction: column;
   background-color: #ffff;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
+  padding-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 .our-team-title {
   color: #2e2f42;

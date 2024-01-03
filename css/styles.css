@@ -79,6 +79,7 @@ img {
   margin-right: 76px;
   flex-grow: 1;
   padding-top: 25.5px;
+  padding-bottom: 25.5px;
 }
 .logo-special {
   color: #2e2f42;
@@ -86,11 +87,12 @@ img {
 
 .nav-header {
   display: inline-flex;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
-  align-items: center;
+
   gap: 40px;
   flex-grow: 2;
 }
@@ -259,6 +261,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 .our-team-list-text {
   display: inline-block;
@@ -303,7 +306,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .our-team-list-text {

@@ -60,7 +60,7 @@ img {
   height: auto;
 }
 .header-wrap {
-  border-bottom: 1px solid #e7e9fc 
+  border-bottom: 1px solid #e7e9fc;
   background-color: var(--WHITE, #fff);
 }
 .header-container {
@@ -86,12 +86,11 @@ img {
 
 .nav-header {
   display: inline-flex;
-  
 }
 
 .nav-list {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 40px;
   flex-grow: 2;
 }
@@ -340,7 +339,7 @@ img {
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-transform: uppercase;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
 }
 
 .logo-special-footer {

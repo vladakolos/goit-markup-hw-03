@@ -21,17 +21,10 @@ h6 {
   margin-bottom: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   max-width: 1158px;
-  padding-left: 0 15px;
+  padding: 0 15px;
   margin: 0 auto;
-  border: 3px solid red;
 }
 
 ul {
@@ -42,6 +35,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .visually-hidden {
@@ -56,10 +53,15 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -71,9 +73,7 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
-  display: inline-flex;
   flex-grow: 1;
-  padding-left: 156px;
   padding-top: 25.5px;
 }
 .logo-special {
@@ -109,7 +109,6 @@ a {
   align-items: flex-end;
   gap: 40px;
   flex-grow: 1;
-  padding-right: 156px;
 }
 
 .contacts-item {
@@ -140,7 +139,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 188px 0;
 }
 .hero-title {
   color: #fff;
@@ -175,40 +173,40 @@ a {
 .hero-button:focus {
   background-color: #404bbf;
 }
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 .features-list {
   color: #434455;
   letter-spacing: 0.02em;
   display: flex;
-  align-content: center;
-  padding-left: 156px;
-  padding-right: 156px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  justify-content: space-between;
 }
 
 .features-list-item {
   flex-basis: calc((100% - 72px) / 4);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  /* max-width: 264px; */
-  margin: 0 auto;
 }
+
 .features-list-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.features-list-text {
 }
 
 .our-team-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 120px 156px;
 }
+
 .our-team {
   background-color: #f4f4fd;
   color: #434455;
@@ -219,13 +217,14 @@ a {
   display: flex;
   flex-shrink: 0;
 }
+
 .our-team-list-item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
   flex-basis: calc((100% - 72px) / 4);
   margin: 0 auto;
 }
+
 .div-border-ourteam {
   background: var(--WHITE, #fff);
   border-radius: 0px 0px 4px 4px;
@@ -267,23 +266,17 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 120px 156px;
 }
+
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  justify-content: center;
+  gap: 48px 24px;
 }
-.our-portf-list-item {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 32px;
-  align-items: flex-start;
-  flex-shrink: 0;
 
-  /* flex-basis: calc((100% - 96px) / 6); */
-  margin: 0 auto;
+.our-portf-list-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .our-portfolio-title {
@@ -296,6 +289,7 @@ a {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+
 .our-portfolio-list-title {
   color: #2e2f42;
   font-size: 20px;
@@ -304,31 +298,28 @@ a {
   letter-spacing: 0.02em;
   padding-bottom: 8px;
 }
+
 .our-team-list-text {
   text-align: left;
 }
 
 .div-for-border-portf {
   background: var(--WHITE, #fff);
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  border-left: 1px solid var(--CORNFLOWER, #e7e9fc);
-  border-right: 1px solid var(--CORNFLOWER, #e7e9fc);
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-top: none;
+  padding: 32px 16px;
   min-width: 100%;
   text-align: left;
 }
 .footer-container {
-  /* min-height: 312px; */
-  /* display: flex;
-  flex-direction: column; */
 }
+
 .footer-items {
   background-color: #2e2f42;
   color: #f4f4fd;
   letter-spacing: 0.02em;
 }
+
 .footer-logo {
   display: inline-block;
   color: #4d5ae5;
@@ -338,20 +329,19 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-transform: uppercase;
-  padding-left: 156px;
   padding-top: 101.5px;
-
   margin-bottom: 17.5px;
 }
+
 .logo-special-footer {
   color: #f4f4fd;
 }
+
 .footer-items-text {
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 156px;
   padding-bottom: 100px;
-  /* width: 264px; */
+  max-width: 264px;
 }

@@ -204,8 +204,6 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.features-list-text {
-}
 
 .our-team-container {
   display: flex;
@@ -319,8 +317,6 @@ img {
   padding: 32px 16px;
   min-width: 100%;
   text-align: left;
-}
-.footer-container {
 }
 
 .footer-items {

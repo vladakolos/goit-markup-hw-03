@@ -92,7 +92,7 @@ img {
 
 .nav-list {
   display: flex;
-
+  align-items: center;
   gap: 40px;
   flex-grow: 2;
 }
@@ -307,10 +307,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-}
-
-.our-team-list-text {
-  text-align: left;
 }
 
 .div-for-border-portf {

@@ -59,6 +59,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+.header-wrap {
+  border-bottom: 1px solid #e7e9fc 
+  background-color: var(--WHITE, #fff);
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -82,11 +86,12 @@ img {
 
 .nav-header {
   display: inline-flex;
+  
 }
 
 .nav-list {
   display: flex;
-  align-items: flex-start;
+  align-items: center; 
   gap: 40px;
   flex-grow: 2;
 }
@@ -133,6 +138,7 @@ img {
 .hero {
   background-color: #2e2f42;
   max-width: 100%;
+  padding: 188px 0;
 }
 .hero-container {
   display: flex;
@@ -147,10 +153,11 @@ img {
   line-height: 1.07;
   letter-spacing: 1.12px;
   text-align: center;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 .hero-button {
+  display: block;
   background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
@@ -162,7 +169,6 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   min-width: 169px;
   min-height: 56px;
-  display: inline-flex;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
@@ -183,6 +189,7 @@ img {
   color: #434455;
   letter-spacing: 0.02em;
   display: flex;
+  gap: 24px;
   justify-content: space-between;
 }
 
@@ -216,6 +223,7 @@ img {
 .our-team-list {
   display: flex;
   flex-shrink: 0;
+  gap: 24px;
 }
 
 .our-team-list-item {
@@ -223,6 +231,7 @@ img {
   flex-direction: column;
   flex-basis: calc((100% - 72px) / 4);
   margin: 0 auto;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .div-border-ourteam {
@@ -257,6 +266,7 @@ img {
 .our-team-list-text {
   display: inline-block;
   font-size: 16px;
+  text-align: center;
 }
 .our-portfolio {
   color: #434455;
@@ -318,6 +328,7 @@ img {
   background-color: #2e2f42;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -329,8 +340,7 @@ img {
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-transform: uppercase;
-  padding-top: 101.5px;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px; 
 }
 
 .logo-special-footer {
